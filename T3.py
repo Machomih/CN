@@ -1,6 +1,7 @@
-import numpy as np
 import tkinter as tk
 from tkinter import simpledialog, messagebox
+
+import numpy as np
 
 
 # Exercițiul 1
@@ -227,10 +228,9 @@ def executa_exercitiul_6():
         # Calculăm norma diferenței dintre cele două inverse
         eroare_inversa = np.linalg.norm(A_inv - A_inv_np)
 
-        messagebox.showinfo("Rezultat Exercițiul 6",
-                            f"Inversa matricei A folosind Householder:\n{A_inv}\n"
-                            f"Inversa matricei A folosind numpy.linalg.inv:\n{A_inv_np}\n"
-                            f"Norma diferenței între cele două inverse este: {eroare_inversa}")
+        messagebox.showinfo("Rezultat Exercițiul 6", f"Inversa matricei A folosind Householder:\n{A_inv}\n"
+                                                     f"Inversa matricei A folosind numpy.linalg.inv:\n{A_inv_np}\n"
+                                                     f"Norma diferenței între cele două inverse este: {eroare_inversa}")
 
     except np.linalg.LinAlgError as e:
         messagebox.showerror("Eroare", "A apărut o problemă la calculul inversei: " + str(e))

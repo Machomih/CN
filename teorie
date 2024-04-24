@@ -1,0 +1,32 @@
+
+"""
+Chestii Teoretice:
+
+
+ Descompunerea LU este o metodă de a descompune o matrice pătratică AaA în produsul a două matrice:
+   o matrice inferior triunghiulară LL și o matrice superior triunghiulară UU. Adică, A=LUA=LU.
+
+De ce este utilă? Este utilă pentru a simplifica rezolvarea sistemelor de ecuații liniare, calculul determinantului,
+ și alte operațiuni matriceale.
+
+Exemplu: Să presupunem că avem matricea AA:
+A= (2,3
+   4,9)
+
+
+Descompunerea LU a matricei AA ar putea arăta așa:
+
+L= (1,0,
+   2,1),
+U= (2,3,
+   0,3)
+
+    Determinantul este o valoare scalară care se poate calcula din elementele unei matrice pătratice și care
+    reflectă anumite proprietăți ale matricei, cum ar fi dacă matricea este inversabilă.
+
+Exemplu: Pentru matricea AA de mai sus, determinantul se calculează astfel:
+det(A)=(2×9)−(4×3)=18−12=6
+det(A)=(2×9)−(4×3)=18−12=6
+
+
+"""
